@@ -55,21 +55,24 @@ const button = () => {
   ) {
     document.getElementById("aviso").innerHTML = "Mensaje enviado con éxito!!";
     document.getElementById("aviso").style.color = "green";
+    document.getElementById("nombre").value = "";
+    document.getElementById("asunto").value = "";
+    document.getElementById("comment").value = "";
   }
 
   if (!/[a-zA-Z]/.test(nombre)) {
-    document.getElementById("error-nombre").innerHTML = "Nombre es Requerido";
+    document.getElementById("error-nombre").innerHTML = "Nombre es Requerido.";
   } else {
     document.getElementById("error-nombre").innerHTML = " ";
   }
   if (!/[a-zA-Z]/.test(asunto)) {
-    document.getElementById("error-asunto").innerHTML = "Asunto es Requerido";
+    document.getElementById("error-asunto").innerHTML = "Asunto es Requerido.";
   } else {
     document.getElementById("error-asunto").innerHTML = " ";
   }
   if (!/[a-zA-Z]/.test(comment)) {
     document.getElementById("error-comment").innerHTML =
-      "Comment es Requerido!";
+      "Comentario es Requerido.";
   } else {
     document.getElementById("error-comment").innerHTML = " ";
   }
