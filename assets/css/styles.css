@@ -1,0 +1,51 @@
+body {
+  background-color: #35bcbf;
+  text-align: center;
+  padding: 5% 0%;
+  color: white;
+  font-size: 1rem;
+}
+
+td {
+  padding: 5%;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 5%;
+}
+
+.section {
+  padding: 2% 2%;
+}
+
+.error {
+  color: darkred;
+}
+form {
+  align-items: center;
+}
+
+#uno {
+  background-color: darkred;
+}
+#dos {
+  background-color: orange;
+}
+#tres {
+  background-color: yellow;
+}
+#cuatro {
+  background-color: green;
+}
+#cinco {
+  background-color: lightskyblue;
+}
+#seis {
+  background-color: fuchsia;
+}
+
+th {
+  height: 150px;
+  width: 100px;
+}
