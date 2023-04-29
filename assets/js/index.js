@@ -58,6 +58,8 @@ const button = () => {
     document.getElementById("nombre").value = "";
     document.getElementById("asunto").value = "";
     document.getElementById("comment").value = "";
+  } else {
+    document.getElementById("aviso").innerHTML = "";
   }
 
   if (!/[a-zA-Z]/.test(nombre)) {
