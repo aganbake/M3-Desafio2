@@ -14,7 +14,7 @@ const factorial = (numero) => {
   return factorial;
 };
 
-function call() {
+const call = () => {
   let option = parseInt(document.getElementById("numero").value);
 
   if (isNaN(option)) {
@@ -41,9 +41,9 @@ function call() {
   }
   document.getElementById("button").disabled = true; //Deshabilitamos el botón, solo para no tener repetidos los datos
   document.getElementById("button2").removeAttribute("hidden"); //Mostramos un botón secreto para empezar de nuevo
-}
+};
 
-function button() {
+const button = () => {
   let nombre = document.getElementById("nombre").value;
   let asunto = document.getElementById("asunto").value;
   let comment = document.getElementById("comment").value;
@@ -73,13 +73,13 @@ function button() {
   } else {
     document.getElementById("error-comment").innerHTML = " ";
   }
-}
+};
 
-function again() {
+const again = () => {
   window.location.href = "index.html"; //devolvemos al inicio
-}
+};
 
-function colores() {
+const colores = () => {
   let colorUno = document.getElementById("uno");
 
   colorUno.addEventListener("click", function onClick(event) {
@@ -115,9 +115,9 @@ function colores() {
   colorSeis.addEventListener("click", function onClick(event) {
     document.getElementById("final").style.backgroundColor = "fuchsia";
   });
-}
+};
 
-function calc() {
+const calc = () => {
   var numeroUno, NumeroDos, oper;
   numeroUno = parseInt(document.getElementById("unoCalc").value);
   NumeroDos = parseInt(document.getElementById("dosCalc").value);
@@ -143,4 +143,4 @@ function calc() {
   } else {
     document.getElementById("result").value = oper;
   }
-}
+};
